@@ -20,7 +20,6 @@ export default defineConfig({
         {
           label: "Data Management",
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: "Koa Cloud", items: [
               {
                 label: "About KoaCloud",
@@ -36,6 +35,10 @@ export default defineConfig({
               },
             ]},
             { label: "Metadata Tool", items: [
+              {
+                label: "About Metadata Tool",
+                link: "/data-management/metadata-tool/"
+              },
               {
                 label: "Accessing Metadata Tool",
                 link: "/data-management/metadata-tool/guides/accessing/"
@@ -57,37 +60,51 @@ export default defineConfig({
                 link: "/data-management/metadata-tool/guides/batch-record/"
               },
             ]},
-            { label: "Geoserver", items: [
-              {
-                label: "Adding WMS Layer to ArcMap and QGIS",
-                link: "/geoserver/guides/wms_arcgis/"
-              },
-              {
-                label: "Modifying Layer on Geoserver",
-                link: "/geoserver/guides/modifying_layer/"
-              },
-              {
-                label: "Layer Management",
-                link: "/geoserver/guides/layer_management/"
-              }
-          ]},
-            { label: "Wordpress", items: [
-              {
-                label: "Creating News Articles",
-                link: "/wordpress/guides/news-article/"
-              },
-              {
-                label: "Adding Publications",
-                link: "/wordpress/guides/updating-publications/"
-              }
-          ]},
             { label: "Geonetwork", items: [
               {
-                label: "Overview Guide",
+                label: "About Geonetwork",
                 link: "/data-management/geonetwork/"
               },
-          ]},
-        ],
+            ]},
+          ],
+        },
+        {
+          label: "Geoserver",
+          items: [
+            {
+              label: "About Geoserver",
+              link: "/geoserver/"
+            },
+            {
+              label: "Adding WMS Layer to ArcMap and QGIS",
+              link: "/geoserver/guides/wms_arcgis/"
+            },
+            {
+              label: "Modifying Layer on Geoserver",
+              link: "/geoserver/guides/modifying_layer/"
+            },
+            {
+              label: "Layer Management",
+              link: "/geoserver/guides/layer_management/"
+            },
+          ],
+        },
+        {
+          label: "Wordpress",
+          items: [
+            {
+              label: "About Wordpress",
+              link: "/wordpress/"
+            },
+            {
+              label: "Creating News Articles",
+              link: "/wordpress/guides/news-article/"
+            },
+            {
+              label: "Adding Publications",
+              link: "/wordpress/guides/updating-publications/"
+            },
+          ],
         },
       ],
     }),
