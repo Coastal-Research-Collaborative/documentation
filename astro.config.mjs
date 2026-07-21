@@ -13,9 +13,9 @@ export default defineConfig({
         dark: "/public/crc-logo.svg",
       },
       favicon: "/crc-logo.svg",
-      social: {
-        github: "https://github.com/climate-resilience-collaborative",
-      },
+      social: [
+        { icon: "github", label: "GitHub", href: "https://github.com/climate-resilience-collaborative" },
+      ],
       sidebar: [
         {
           label: "Data Management",
