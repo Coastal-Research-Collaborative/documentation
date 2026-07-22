@@ -35,32 +35,6 @@ export default defineConfig({
                 link: "/data-management/koacloud/guides/unlinking-sync-client/"
               },
             ]},
-            { label: "Metadata Tool", items: [
-              {
-                label: "About Metadata Tool",
-                link: "/data-management/metadata-tool/"
-              },
-              {
-                label: "Accessing Metadata Tool",
-                link: "/data-management/metadata-tool/guides/accessing/"
-              },
-              {
-                label: "Record Curation",
-                link: "/data-management/metadata-tool/guides/record-curation/"
-              },
-              {
-                label: "Managing Records",
-                link: "/data-management/metadata-tool/guides/record-management/"
-              },
-              {
-                label: "Viewing Projects",
-                link: "/data-management/metadata-tool/guides/projects/"
-              },
-              {
-                label: "Batch Record Creation",
-                link: "/data-management/metadata-tool/guides/batch-record/"
-              },
-            ]},
             { label: "Geonetwork", items: [
               {
                 label: "About Geonetwork",

@@ -1,0 +1,35 @@
+---
+title: Adding New Publication Articles 
+description: How to create news articles for the CRC wordpress website and how it is displayed on the pages.
+author: Skyler Kimura
+---
+
+import { Image } from "astro:assets";
+import img_wordpress_01 from "../../../../assets/wordpress/wordpress_01.png";
+import img_publication_03 from "../../../../assets/wordpress/publication_03.png";
+import img_publication_02 from "../../../../assets/wordpress/publication_02.png";
+import img_publication_04 from "../../../../assets/wordpress/publication_04.png";
+import img_publication_05 from "../../../../assets/wordpress/publication_05.png";
+import img_publication_06 from "../../../../assets/wordpress/publication_06.png";
+
+1. On Wordpress admin panel, navigate to the "Pages" dashboard on the left navbar
+<a href={img_wordpress_01.src} target="_blank" rel="noopener"><Image src={img_wordpress_01} alt="Wordpress Admin Dashboard" /></a>
+2. On the "Pages" dashboard, select "Publication"
+<a href={img_publication_03.src} target="_blank" rel="noopener"><Image src={img_publication_03} alt="Wordpress Pages Dashboard" /></a>
+Each publication will be under the publish year.
+<a href={img_publication_02.src} target="_blank" rel="noopener"><Image src={img_publication_02} alt="Wordpress Page Editor for &quot;Publication&quot;" /></a>
+3. In the respective textbox, add the publication citation within the ordered list HTML tag
+<a href={img_publication_04.src} target="_blank" rel="noopener"><Image src={img_publication_04} alt="Wordpress Publication HTML Editor" /></a>
+4. Nest the citation within an anchor tag and the outer most a list tag with the class attribute "citation"
+Below is an example:
+```
+<ol start="###" reversed="">
+<li class="citation">
+<a href="https://tos.org/oceanography/assets/docs/37-1-meguro.pdf" target="_blank" rel="noreferrer noopener">
+Meguro, W., C.H. Fletcher, J. Briones, E. Teeples, and G. Casey. 2024. A visionary approach to advancing sea level rise adaptation in an urban coastal community, Waikīkī, Hawai‘i. Oceanography 37(1):122–123, https://doi.org/10.5670/oceanog.2024.223.</a>
+</li>
+```
+5. If you would like to preview your changes click "View Page" button
+<a href={img_publication_05.src} target="_blank" rel="noopener"><Image src={img_publication_05} alt="View Page Button" /></a>
+6. After your changes have been made, click "Update"
+<a href={img_publication_06.src} target="_blank" rel="noopener"><Image src={img_publication_06} alt="Update Page Button" /></a>

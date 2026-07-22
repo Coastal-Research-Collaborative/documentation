@@ -1,0 +1,106 @@
+---
+title: Accessing KoaCloud
+description: How to access KoaCloud guide 
+author: Skyler Kimura
+---
+
+import { Image } from "astro:assets";
+import img_koacloud_02 from "../../../../../assets/koacloud/koacloud-02.png";
+import img_koacloud_01 from "../../../../../assets/koacloud/koacloud-01.png";
+import img_koacloud_05 from "../../../../../assets/koacloud/koacloud-05.png";
+import img_koacloud_06 from "../../../../../assets/koacloud/koacloud-06.png";
+import img_koacloud_15 from "../../../../../assets/koacloud/koacloud-15.png";
+import img_koacloud_16 from "../../../../../assets/koacloud/koacloud-16.png";
+import img_koacloud_17 from "../../../../../assets/koacloud/koacloud-17.png";
+import img_koacloud_18 from "../../../../../assets/koacloud/koacloud-18.png";
+import img_koacloud_07 from "../../../../../assets/koacloud/koacloud-07.png";
+import img_koacloud_08 from "../../../../../assets/koacloud/koacloud-08.png";
+import img_koacloud_09 from "../../../../../assets/koacloud/koacloud-09.png";
+import img_koacloud_10 from "../../../../../assets/koacloud/koacloud-10.png";
+import img_koacloud_11 from "../../../../../assets/koacloud/koacloud-11.png";
+import img_koacloud_12 from "../../../../../assets/koacloud/koacloud-12.png";
+import img_koacloud_13 from "../../../../../assets/koacloud/koacloud-13.png";
+import img_koacloud_14 from "../../../../../assets/koacloud/koacloud-14.png";
+
+## Getting Access to CRC Shared Drive on KoaCloud
+**READ BEFORE MOVING ON**<br />
+If this is your first time using Koa Cloud, you will need to get your UH account setup with KoaCloud.
+1. Go to https://koacloud.its.hawaii.edu
+<a href={img_koacloud_02.src} target="_blank" rel="noopener"><Image src={img_koacloud_02} alt="UH Authentication" /></a>
+2. Log in with your UH Username and Password
+3. Email skyler8@hawaii.edu or mbarbee@hawaii.edu to that you setup your account on KoaCloud, so they can grant access to CRC shared drive
+
+There are two ways to access and use KoaCloud:
+- web interface
+- sync client
+
+## Web Interface
+<a href={img_koacloud_01.src} target="_blank" rel="noopener"><Image src={img_koacloud_01} alt="KoaCloud Web Interface" /></a>
+
+* Going to https://koacloud.its.hawaii.edu/ will direct you to the web interface
+* You can manage files and upload new files to KoaCloud through this interface
+* There are other features that the web interface provides
+
+
+## Sync Client (Mountable Drive)
+UH ITS made a guide on how to install the sync client over [here](https://uhawaii.atlassian.net/wiki/spaces/RStorage/pages/452460690/Sync+Client)<br /> 
+
+For CRC's KoaCloud directory, there are specific configurations that we recommend
+
+
+### Syncing with user directory 
+
+- When it comes to configuring your folder sync option, **DO NOT SELECT THE FIRST OPTION** (Synchronize everything from server)<br />
+- Please select the second option, where you get to choose what to sync.
+<a href={img_koacloud_05.src} target="_blank" rel="noopener"><Image src={img_koacloud_05} alt="KoaCloud Client Configuration" /></a>
+
+- In the "Users" directory, you will find a directory named with your UH username. Please select only that folder to sync.<br />
+- If you cannot find a directory with your UH username, please email skyler8@hawaii.edu or mbarbee@hawaii.edu.<br />
+- Once you have selected **only** the directory named with your UH username, click "OK".<br />
+<a href={img_koacloud_06.src} target="_blank" rel="noopener"><Image src={img_koacloud_06} alt="KoaCloud Sync Folder" /></a>
+
+
+- After choosing your user directory, the folder configuration window will show the amount of space your user directory will take up.
+- The amount of free space in your Local Folder is shown as well
+- This syncing method will download everything in your CRC KoaCloud user directory into your Local Folder.
+<a href={img_koacloud_15.src} target="_blank" rel="noopener"><Image src={img_koacloud_15} alt="Local Folder" /></a>
+
+- You may want to change the "Local Folder" to be on a different hard drive and/or you may want change the name of the "Local Folder"
+- Click on "Choose different folder"
+<a href={img_koacloud_16.src} target="_blank" rel="noopener"><Image src={img_koacloud_16} alt="Choose different folder" /></a>
+
+- In the directory dialog, select a folder on your computer that has sufficient space. Choosing a folder within an external hard drive is recommeneded.
+- You can also name the folder anything you want as long as you can remember what it holds.
+- After choosing/naming the folder that will hold your KoaCloud user directory, click "Select Folder"
+<a href={img_koacloud_17.src} target="_blank" rel="noopener"><Image src={img_koacloud_17} alt="directory dialog" /></a>
+
+- Once your folder configuration looks good, you can click "Connect"
+<a href={img_koacloud_18.src} target="_blank" rel="noopener"><Image src={img_koacloud_18} alt="KoaCloud Folder Configuartion Connect" /></a>
+
+Now you are done syncing with your CRC KoaCloud user directory, you will have to access the other CRC directories with a different method<br />
+Since the other CRC directories will have **well over 100 GB** of files, you do not want to download a copy of everything (which is what the above method does).<br />
+
+You can either:
+- Access the files in the web interface (similar to using Google Drives web interface)
+- You can also locally mount the directory with virtual files
+    - Virtual files are copies of the file that represent what is inside KoaCloud, but do not take up any space (similar to Google Drives desktop application)
+
+### Sync with other CRC KoaCloud directory (virtual files)
+- Open NextCloud sync client window
+<a href={img_koacloud_07.src} target="_blank" rel="noopener"><Image src={img_koacloud_07} alt="Windows Open NextCloud pt 1" /></a>
+- Click on your username on the NextCloud Window
+<a href={img_koacloud_08.src} target="_blank" rel="noopener"><Image src={img_koacloud_08} alt="NextCloud Username" /></a>
+- Click on "Settings" in the dropdown menu
+<a href={img_koacloud_09.src} target="_blank" rel="noopener"><Image src={img_koacloud_09} alt="Settings Dropdown" /></a>
+- Click on "Add Folder Sync Connection"
+<a href={img_koacloud_10.src} target="_blank" rel="noopener"><Image src={img_koacloud_10} alt="Add Folder Sync Connection" /></a>
+- Enter the path on your local machine that you would like to access this "virtual" directory and then click "Next"
+<a href={img_koacloud_11.src} target="_blank" rel="noopener"><Image src={img_koacloud_11} alt="Choose path for virtual files" /></a>
+- Select the folder on KoaCloud that you would like to sync virtually
+<a href={img_koacloud_12.src} target="_blank" rel="noopener"><Image src={img_koacloud_12} alt="Choose foler that you would like to sync virutally" /></a>
+- Be sure to check the "Use virtual files instead of downloading content immediately" checkbox
+<a href={img_koacloud_13.src} target="_blank" rel="noopener"><Image src={img_koacloud_13} alt="virtual files checkbox" /></a>
+- To complete connection click "Add Sync Connection"
+<a href={img_koacloud_14.src} target="_blank" rel="noopener"><Image src={img_koacloud_14} alt="finish virtual sync" /></a>
+
+

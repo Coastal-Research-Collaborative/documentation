@@ -1,0 +1,67 @@
+---
+title: Adding Map Layer From Web Mapping Service (WMS)
+description: How to add layer from WMS Server in QGIS and ArcMap
+author: Skyler Kimura
+---
+
+import { Image } from "astro:assets";
+import img_qgis_01 from "../../../../assets/geoserver/qgis_01.png";
+import img_qgis_02 from "../../../../assets/geoserver/qgis_02.png";
+import img_qgis_03 from "../../../../assets/geoserver/qgis_03.png";
+import img_qgis_04 from "../../../../assets/geoserver/qgis_04.png";
+import img_qgis_06 from "../../../../assets/geoserver/qgis_06.png";
+import img_qgis_05 from "../../../../assets/geoserver/qgis_05.png";
+import img_arcmap_01 from "../../../../assets/geoserver/arcmap_01.png";
+import img_arcmap_07 from "../../../../assets/geoserver/arcmap_07.png";
+import img_arcmap_08 from "../../../../assets/geoserver/arcmap_08.png";
+import img_arcmap_03 from "../../../../assets/geoserver/arcmap_03.png";
+import img_arcmap_09 from "../../../../assets/geoserver/arcmap_09.png";
+import img_arcmap_06 from "../../../../assets/geoserver/arcmap_06.png";
+
+# WMS URLs For CRC Geoservers
+ - https://crcgeo.soest.hawaii.edu/geoserver/ows?version=1.3.0 (SLR Viewer Layers)
+ - http://crc-geoserver2.soest.hawaii.edu:8600/geoserver/ows?version=1.3.0 (Historical Mosaics)
+
+# Adding WMS Connection to QGIS
+
+1. Right click "WMS/WMTS" option in Browser Panel
+<a href={img_qgis_01.src} target="_blank" rel="noopener"><Image src={img_qgis_01} alt="QGIS" /></a>
+2. Select "New Connection..." in the right-click menu
+<a href={img_qgis_02.src} target="_blank" rel="noopener"><Image src={img_qgis_02} alt="Right-Click menu" /></a>
+ - The "Create a New WMS/WMTS Connection" Dialog will pop up
+3. Enter a name in the "Name" field (Ex. crcgeo)
+<a href={img_qgis_03.src} target="_blank" rel="noopener"><Image src={img_qgis_03} alt="WMS Connection" /></a>
+4. Enter the WMS Server URL in the "URL" field
+5. Click "OK"
+
+6. If the connection is successful, layers served by the Geoserver will appear under the name of the connection
+<a href={img_qgis_04.src} target="_blank" rel="noopener"><Image src={img_qgis_04} alt="Browser Panel" /></a>
+
+7. If the connection fails, you will encounter "Download of capabilities failed: ..."
+<a href={img_qgis_06.src} target="_blank" rel="noopener"><Image src={img_qgis_06} alt="Error Message" /></a>
+
+8. Double click any layer under your desired server and it should appear on the map 
+<a href={img_qgis_05.src} target="_blank" rel="noopener"><Image src={img_qgis_05} alt="Layer List" /></a>
+
+# Adding WMS Connection to ArcMap Desktop
+
+<a href={img_arcmap_01.src} target="_blank" rel="noopener"><Image src={img_arcmap_01} alt="ArcMap" /></a>
+
+1. Click the "Catalog" button on the top right of ArcMap 
+<a href={img_arcmap_07.src} target="_blank" rel="noopener"><Image src={img_arcmap_07} alt="ArcMap Catlog Pane Button" /></a>
+
+2. In the "Catalog" pane, click add WMS Server
+<a href={img_arcmap_08.src} target="_blank" rel="noopener"><Image src={img_arcmap_08} alt="ArcMap Catalog Pnae" /></a>
+
+2. Enter the desired WMS Server URL in "URL" input box
+
+3. Test the connection by clicking "Get Layers" button
+    - If connection is good, layers in geoserver will appear in "Server Layers" box
+4. Click "Ok" button
+<a href={img_arcmap_03.src} target="_blank" rel="noopener"><Image src={img_arcmap_03} alt="Add connection dialogue" /></a>
+
+5. In the "Catalog" pane, expand the WMS server option that you just added until the list of layers show up
+<a href={img_arcmap_09.src} target="_blank" rel="noopener"><Image src={img_arcmap_09} alt="Add layer to ArcGIS" /></a>
+
+6. Drag and drop layer in "Table of Contents" for it to appear on the map
+<a href={img_arcmap_06.src} target="_blank" rel="noopener"><Image src={img_arcmap_06} alt="Add layer to ArcGIS" /></a>

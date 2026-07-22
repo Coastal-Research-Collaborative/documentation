@@ -4,7 +4,10 @@ description: Description of KoaCloud
 author: Skyler Kimura
 ---
 
-![Koa Cloud Logo](../../../../assets/koacloud/image.webp)
+import { Image } from "astro:assets";
+import img_image from "../../../../assets/koacloud/image.webp";
+
+<a href={img_image.src} target="_blank" rel="noopener"><Image src={img_image} alt="Koa Cloud Logo" /></a>
 
 
 ### What is it?

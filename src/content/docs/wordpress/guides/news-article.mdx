@@ -4,6 +4,14 @@ description: How to create news articles for the CRC wordpress website and how i
 author: Skyler Kimura
 ---
 
+import { Image } from "astro:assets";
+import img_news_01 from "../../../../assets/wordpress/news_01.png";
+import img_news_02 from "../../../../assets/wordpress/news_02.png";
+import img_news_03 from "../../../../assets/wordpress/news_03.png";
+import img_news_04 from "../../../../assets/wordpress/news_04.png";
+import img_news_05 from "../../../../assets/wordpress/news_05.png";
+import img_news_06 from "../../../../assets/wordpress/news_06.png";
+
 # News Articles
 News articles are a custom wordpress post type created by Skyler (skyler8@hawaii.edu) that are displayed on the website via query loop.
 If you would like to learn more about custom wordpress post types and create addition post types, you can check 
@@ -11,33 +19,33 @@ out the [Wordpress Documentation](https://developer.wordpress.org/plugins/post-t
 
 ## How to Create News Article
 ### Wordpress Admin Dashboard
-![Wordpress Admin Dashboard](../../../../assets/wordpress/news_01.png)
+<a href={img_news_01.src} target="_blank" rel="noopener"><Image src={img_news_01} alt="Wordpress Admin Dashboard" /></a>
 To view the News article post type, click on "News" on the left menu on the Admin Dashboard (Shown in Red box).
 
 ### Adding New Post
-![Wordpress Add New Post](../../../../assets/wordpress/news_02.png)
+<a href={img_news_02.src} target="_blank" rel="noopener"><Image src={img_news_02} alt="Wordpress Add New Post" /></a>
 The page will show all of the previous news articles that have been created. Click on "Add New Post".
 
 ### Formatting Post
-![Wordpress Post Creator](../../../../assets/wordpress/news_03.png)
+<a href={img_news_03.src} target="_blank" rel="noopener"><Image src={img_news_03} alt="Wordpress Post Creator" /></a>
 Follow the above guideline shown in the figure above carefully. 
 1. Set the Title of the Post to be the title of the article. This title will not be shown on the page because post titles cannot have links in them on wordpress.
 2. Enter an Level 2 Heading (H2) with the title of the article as the first element in the content
 3. Enter an excerpt or summary of the news article (usually the first paragraph of news article) followed by "Read More" with a link to the article
 
 ### Post Created
-![Post Display](../../../../assets/wordpress/news_04.png)
+<a href={img_news_04.src} target="_blank" rel="noopener"><Image src={img_news_04} alt="Post Display" /></a>
 If all things went well, you would have created a news article post type that will be displayed on the CRC Home Page and CRC in the News page
 
 ## Query Loop in Wordpress
 ### Settings
-![Loop Settings](../../../../assets/wordpress/news_05.png)
+<a href={img_news_05.src} target="_blank" rel="noopener"><Image src={img_news_05} alt="Loop Settings" /></a>
 When you edit the "CRC in the News" page, you will see that the only content is a "Query Loop" on the Content outline. 
 You can click on Query Loop and find the settings for the Query Loop behaviors. If you can learn more about Query Loop on
 the [Wordpress Documentation](https://wordpress.com/support/wordpress-editor/blocks/query-loop-block/).
 
 ### Template
-![Loop Template](../../../../assets/wordpress/news_06.png)
+<a href={img_news_06.src} target="_blank" rel="noopener"><Image src={img_news_06} alt="Loop Template" /></a>
 The Query Loop is looking for all the Posts within a Post Type and displaying it as a template for better organization
 of the Post Content. You can see this if you expand the Post Template and find how I organized the New Article Content.
 1. In red, the featured image of the article is shown in the first (left) column

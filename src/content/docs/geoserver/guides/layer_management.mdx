@@ -4,9 +4,18 @@ description: How to add/modify/delete layers on Geoserver
 author: Skyler Kimura
 ---
 
+import { Image } from "astro:assets";
+import img_geoimporter_01 from "../../../../assets/geoserver/geoimporter_01.png";
+import img_geoimporter_03 from "../../../../assets/geoserver/geoimporter_03.png";
+import img_geoimporter_02 from "../../../../assets/geoserver/geoimporter_02.png";
+import img_geoimporter_05 from "../../../../assets/geoserver/geoimporter_05.png";
+import img_geoimporter_08 from "../../../../assets/geoserver/geoimporter_08.png";
+import img_geoimporter_04 from "../../../../assets/geoserver/geoimporter_04.png";
+import img_geoimporter_07 from "../../../../assets/geoserver/geoimporter_07.png";
+
 # Geoserver Layer Managment
 
-There are only two ways to interface with the Geoserver Layer management: <br>
+There are only two ways to interface with the Geoserver Layer management: <br />
 1. Geoimporter (easiest and recommened way)
 2. Geoserver Interface (Not Recommeneded)
 
@@ -15,7 +24,7 @@ There are only two ways to interface with the Geoserver Layer management: <br>
 [Github Repository](https://github.com/ryvami/geoimporter)
 
 ### Adding & Publishing Layers to Geoserver
-![Geoimporter Import tab](../../../../assets/geoserver/geoimporter_01.png)
+<a href={img_geoimporter_01.src} target="_blank" rel="noopener"><Image src={img_geoimporter_01} alt="Geoimporter Import tab" /></a>
 Most of the fields will be filled in because there is a .env file provided with the executable file. If the fields are not filled in, then the .env file is missing, but it should not be hard to enter the information in.
 
 1. Change the URL to the desired Geoserver
@@ -23,27 +32,27 @@ Most of the fields will be filled in because there is a .env file provided with 
 3. Enter password
 4. Enter the workspace that you would like to publish your layer to
 5. Click "Dir" button to open directory dialog
-![Directory Dialog](../../../../assets/geoserver/geoimporter_03.png)
+<a href={img_geoimporter_03.src} target="_blank" rel="noopener"><Image src={img_geoimporter_03} alt="Directory Dialog" /></a>
 7. In the directory dialog, select all of the layers that you would like to upload
 6. Click "Import" to upload & publish the selected layers to your Geoserver
 
 There will be a output console in the background to show confirmations that the layer has been uploaded, and if there are any error, the program will dump the error in the console.
 
 ### Deleting Layer from Geoserver
-![Geoimporter Delete Tab](../../../../assets/geoserver/geoimporter_02.png)
+<a href={img_geoimporter_02.src} target="_blank" rel="noopener"><Image src={img_geoimporter_02} alt="Geoimporter Delete Tab" /></a>
 
-Layers in Geoserver:<br>
-![Layer Box](../../../../assets/geoserver/geoimporter_05.png)
+Layers in Geoserver:<br />
+<a href={img_geoimporter_05.src} target="_blank" rel="noopener"><Image src={img_geoimporter_05} alt="Layer Box" /></a>
 
-Shapefile table in PostgresDB:<br>
-![Table Box](../../../../assets/geoserver/geoimporter_08.png)
+Shapefile table in PostgresDB:<br />
+<a href={img_geoimporter_08.src} target="_blank" rel="noopener"><Image src={img_geoimporter_08} alt="Table Box" /></a>
 Note: Deleteing the table in the postgres will unpublish the layer on the Geoserver
 
 The text input box uses regex pattern matching, so you can type in a regex patter to search for the layer that you would like to delete.
-![Regex Search Term](../../../../assets/geoserver/geoimporter_04.png)
+<a href={img_geoimporter_04.src} target="_blank" rel="noopener"><Image src={img_geoimporter_04} alt="Regex Search Term" /></a>
 
 You do not need to use regex pattern, but you can just type in a search term and all of the names that contain the search term will appear.
-![Regular Search Term](../../../../assets/geoserver/geoimporter_07.png)
+<a href={img_geoimporter_07.src} target="_blank" rel="noopener"><Image src={img_geoimporter_07} alt="Regular Search Term" /></a>
 
 1. After searching for the layer/table, click on all of the layers that you would like to delete
 2. Click the "Delete" button to execute 

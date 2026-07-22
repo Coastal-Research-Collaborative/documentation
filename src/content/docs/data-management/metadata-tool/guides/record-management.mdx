@@ -4,23 +4,36 @@ description: Information About Metadata Tool for Data Cataloging
 author: Skyler Kimura
 ---
 
+import { Image } from "astro:assets";
+import img_metadata_tool_08 from "../../../../../assets/metadata-tool/metadata-tool-08.png";
+import img_metadata_tool_09 from "../../../../../assets/metadata-tool/metadata-tool-09.png";
+import img_metadata_tool_10 from "../../../../../assets/metadata-tool/metadata-tool-10.png";
+import img_metadata_tool_11 from "../../../../../assets/metadata-tool/metadata-tool-11.png";
+import img_metadata_tool_12 from "../../../../../assets/metadata-tool/metadata-tool-12.png";
+import img_metadata_tool_13 from "../../../../../assets/metadata-tool/metadata-tool-13.png";
+import img_metadata_tool_14 from "../../../../../assets/metadata-tool/metadata-tool-14.png";
+import img_metadata_tool_15 from "../../../../../assets/metadata-tool/metadata-tool-15.png";
+import img_metadata_tool_16 from "../../../../../assets/metadata-tool/metadata-tool-16.png";
+import img_metadata_tool_17 from "../../../../../assets/metadata-tool/metadata-tool-17.png";
+import img_metadata_tool_18 from "../../../../../assets/metadata-tool/metadata-tool-18.png";
+
 - Records are the information that represents the datasets in the Metadata Tool. There is no data or datasets stored inside the Metadata Tool, so no data will or official metadata will be modified. 
 - For any further explaination on the record fields, please refer to [record curation guide](record-curation/)
 
 ## <a href="https://https://crc-metadata-tool.fly.dev/records" target="_blank">Filtering Records</a>
 
-![Metadata Tool](../../../../../assets/metadata-tool/metadata-tool-08.png)
+<a href={img_metadata_tool_08.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_08} alt="Metadata Tool" /></a>
 
 - This section will go over how to search for records based on your criteria utilizing filters on the fields of the records
 
 ### Fiter based on Name of Record
-![Record Table Search Bar](../../../../../assets/metadata-tool/metadata-tool-09.png)
+<a href={img_metadata_tool_09.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_09} alt="Record Table Search Bar" /></a>
 
 - In the table searchbar, you can enter a word or partial word. The filter will display all record names that contain the exact word or partial word you entered, anywhere within the name of the record. 
 - Ex. you type 'sales' it will show all datasets with names like 'sales_data,' and 'monthly_sales'. However, from the two example names,if you type 'data', only 'sales_data' will be displayed on the table.
 
 ### Filter records by specified fields
-![Record Table Filter Menu](../../../../../assets/metadata-tool/metadata-tool-10.png)
+<a href={img_metadata_tool_10.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_10} alt="Record Table Filter Menu" /></a>
 
 - Filter Fields
     - In Zenodo
@@ -33,7 +46,7 @@ author: Skyler Kimura
 
 
 ### Filter records by storage location type
-![Location Type Selection Options](../../../../../assets/metadata-tool/metadata-tool-11.png)
+<a href={img_metadata_tool_11.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_11} alt="Location Type Selection Options" /></a>
 
 - The only four data location types are:
     - Koa
@@ -44,28 +57,28 @@ author: Skyler Kimura
 - Ex. You select coastal6, then the table will display all data stored on coastal6
 
 ### Filter records by location path
-![Location Field](../../../../../assets/metadata-tool/metadata-tool-12.png)
+<a href={img_metadata_tool_12.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_12} alt="Location Field" /></a>
 
 
 ### Filter records by Project 1
-![project 1 dropdown](../../../../../assets/metadata-tool/metadata-tool-13.png)
+<a href={img_metadata_tool_13.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_13} alt="project 1 dropdown" /></a>
 
 - Filter all records based on project 1 field even if you are not part of the project
 - Select the project that the record is associated with
 
 ### Filter records by Project 2
-![project 2 dropdown](../../../../../assets/metadata-tool/metadata-tool-14.png)
+<a href={img_metadata_tool_14.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_14} alt="project 2 dropdown" /></a>
 
 - Filter all records based on project 2 field even if you are not part of the project
 - Select the project that the record is associated with
 
 ### Filter records by CRCID 
-![CRCID filter field](../../../../../assets/metadata-tool/metadata-tool-15.png)
+<a href={img_metadata_tool_15.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_15} alt="CRCID filter field" /></a>
 - Reference record field description in record curation guide for more informatoin about CRCID [here](record-curation/)
 
 
 ### Filter records by record date
-![date filter field](../../../../../assets/metadata-tool/metadata-tool-16.png)
+<a href={img_metadata_tool_16.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_16} alt="date filter field" /></a>
 
 - Filter record based on the Date From:
     - This will show records that are dated after the specified date
@@ -83,20 +96,20 @@ author: Skyler Kimura
 
 
 ### How to Update Record
-![Update Record Table](../../../../../assets/metadata-tool/metadata-tool-17.png)
+<a href={img_metadata_tool_17.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_17} alt="Update Record Table" /></a>
 - Note: You can only update records from the project that you are assigned. If you do not see a record that you want to change, you are most likely not assigned the project
 - If you need access to another projects records, refer back to [accessing uid tool guide](accessing/) for instructions on how to get project assignment
 
 ### Update Record Form
-![Update Record Form](../../../../../assets/metadata-tool/metadata-tool-18.png)
-For more details on the fields checkout the [data curation guide](record-curation/)<br>
+<a href={img_metadata_tool_18.src} target="_blank" rel="noopener"><Image src={img_metadata_tool_18} alt="Update Record Form" /></a>
+For more details on the fields checkout the [data curation guide](record-curation/)<br />
 If needed, you can edit the fields below:
 - Record Name
 - Description of record
 - Keywords
 - Date
 - Location type that the dataset is stored
-- Specific file location path that the dataset is stored<br>If the storage medium has been changed, please follow the format explained in [data curation guide](record-curation/) for location field
+- Specific file location path that the dataset is stored<br />If the storage medium has been changed, please follow the format explained in [data curation guide](record-curation/) for location field
 - If the dataset has been moved to Zenodo, then check the Zenodo field checkbox
 - Otherwise, uncheck the Zenodo field checkbox
-<br>Most likely will not be unchecked because data should stay in Zenodo
+<br />Most likely will not be unchecked because data should stay in Zenodo
