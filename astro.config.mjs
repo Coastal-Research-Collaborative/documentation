@@ -90,6 +90,19 @@ export default defineConfig({
           ],
         },
         {
+          label: "Admin",
+          items: [
+            {
+              label: "About Admin",
+              link: "/admin/"
+            },
+            {
+              label: "Managing Google Group Members",
+              link: "/admin/guides/crc-mail-list/"
+            },
+          ],
+        },
+        {
           label: "Wordpress",
           items: [
             {
