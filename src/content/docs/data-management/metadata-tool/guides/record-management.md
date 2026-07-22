@@ -5,7 +5,7 @@ author: Skyler Kimura
 ---
 
 - Records are the information that represents the datasets in the Metadata Tool. There is no data or datasets stored inside the Metadata Tool, so no data will or official metadata will be modified. 
-- For any further explaination on the record fields, please refer to [record curation guide](/crc-documentation/data-management/metadata-tool/guides/record-curation)
+- For any further explaination on the record fields, please refer to [record curation guide](record-curation/)
 
 ## <a href="https://https://crc-metadata-tool.fly.dev/records" target="_blank">Filtering Records</a>
 
@@ -40,7 +40,7 @@ author: Skyler Kimura
     - Coastal6
     - Locally Stored
     - Other
-- See [records curation guide](/crc-documentation/data-management/metadata-tool/guides/record-curation/) for details on each data location type
+- See [records curation guide](record-curation/) for details on each data location type
 - Ex. You select coastal6, then the table will display all data stored on coastal6
 
 ### Filter records by location path
@@ -61,7 +61,7 @@ author: Skyler Kimura
 
 ### Filter records by CRCID 
 ![CRCID filter field](../../../../../assets/metadata-tool/metadata-tool-15.png)
-- Reference record field description in record curation guide for more informatoin about CRCID [here](/crc-documentation/data-management/metadata-tool/guides/record-curation/)
+- Reference record field description in record curation guide for more informatoin about CRCID [here](record-curation/)
 
 
 ### Filter records by record date
@@ -85,18 +85,18 @@ author: Skyler Kimura
 ### How to Update Record
 ![Update Record Table](../../../../../assets/metadata-tool/metadata-tool-17.png)
 - Note: You can only update records from the project that you are assigned. If you do not see a record that you want to change, you are most likely not assigned the project
-- If you need access to another projects records, refer back to [accessing uid tool guide](/crc-documentation/data-management/metadata-tool/guides/accessing) for instructions on how to get project assignment
+- If you need access to another projects records, refer back to [accessing uid tool guide](accessing/) for instructions on how to get project assignment
 
 ### Update Record Form
 ![Update Record Form](../../../../../assets/metadata-tool/metadata-tool-18.png)
-For more details on the fields checkout the [data curation guide](/crc-documentation/data-management/metadata-tool/guides/record-curation)<br>
+For more details on the fields checkout the [data curation guide](record-curation/)<br>
 If needed, you can edit the fields below:
 - Record Name
 - Description of record
 - Keywords
 - Date
 - Location type that the dataset is stored
-- Specific file location path that the dataset is stored<br>If the storage medium has been changed, please follow the format explained in [data curation guide](/crc-documentation/data-management/metadata-tool/guides/record-curation) for location field
+- Specific file location path that the dataset is stored<br>If the storage medium has been changed, please follow the format explained in [data curation guide](record-curation/) for location field
 - If the dataset has been moved to Zenodo, then check the Zenodo field checkbox
 - Otherwise, uncheck the Zenodo field checkbox
 <br>Most likely will not be unchecked because data should stay in Zenodo

@@ -33,7 +33,7 @@ author: Skyler Kimura
  - Updated: Date and time record has been **updated** in the Metadata Tool
  - Description: Additional metadata for the dataset name and description to further identify what the dataset means
 
- Note: You can query the records based on the fields above. You can checkout the record querying guide over [here](/crc-documentation/data-management/metadata-tool/guides/record-curation)<br>
+ Note: You can query the records based on the fields above. You can checkout the record querying guide over [here](record-management/)<br>
  All fields for this form requires an entry. If there is ambiguity within the description of the field, please email skyler8@hawaii.edu, but for now you can just enter
  a temporary placeholder for now and edit it with the actual information later. 
 
@@ -71,7 +71,7 @@ author: Skyler Kimura
 ### 7. Select a Primary Project for the dataset
 ![Step 7 screenshot](https://images.tango.us/workflows/e2aed1bc-5fb3-4842-8746-1fa30482f3e8/steps/dd9ea111-53f7-4a7d-a520-37b87847134d/3f61109d-0f78-4477-8a0d-1b2cbafd2fac.png?crop=focalpoint&fit=crop&fp-x=0.4666&fp-y=0.7144&fp-z=1.4386&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=259&mark-y=503&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz02ODImaD03MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 - The project 1 dropdown will be populated by the projects that you are assigned
-- To see the list of all projects, you can view the projects [here](/crc-documentation/data-management/metadata-tool/guides/projects/)
+- To see the list of all projects, you can view the projects [here](projects/)
 - If you need to access to another project, please email skyler8@hawaii.edu or mbarbee@hawaii.edu
 - Dataset needs to have at least one associated project. If there's not a specific project associated to the dataset, choose General Data.
 

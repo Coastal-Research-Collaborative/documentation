@@ -7,4 +7,4 @@ description: Overview of administrative tasks for CRC systems
 This section covers administrative tasks for managing CRC accounts, groups, and access across CRC systems.
 
 ## Guides
-- [Managing Google Group Members](/admin/guides/crc-mail-list/)
+- [Managing Google Group Members](guides/crc-mail-list/)
