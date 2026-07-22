@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "CRC Documentation",
+      customCss: ["./src/styles/custom.css"],
       logo: {
         light: "/public/crc-logo.svg",
         dark: "/public/crc-logo.svg",

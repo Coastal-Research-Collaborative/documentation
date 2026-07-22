@@ -1,0 +1,18 @@
+/* Widen the reading column a bit so wide screenshots have more room to render legibly */
+:root {
+  --sl-content-width: 55rem;
+}
+
+/* Guide screenshots are wrapped in a link to their full-resolution file; hint that they're clickable */
+.sl-markdown-content a:has(> img) {
+  display: inline-block;
+}
+
+.sl-markdown-content a:has(> img) img {
+  cursor: zoom-in;
+  transition: opacity 0.15s ease;
+}
+
+.sl-markdown-content a:has(> img):hover img {
+  opacity: 0.85;
+}
